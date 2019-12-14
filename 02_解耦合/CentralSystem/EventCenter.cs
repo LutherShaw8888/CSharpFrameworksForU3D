@@ -26,12 +26,8 @@ public class EventCenter {
 		if (!eventCenterDic.ContainsKey (eventReg)) {
 			eventCenterDic.Add (eventReg, null);
 		}
-		if (eventCenterDic[eventReg] != null) {
-			if (eventCenterDic[eventReg].GetType () != eventCallback.GetType ()) {
-				throw new Exception (string.Format ("尝试为事件{0}添加不同类型的委托，当前事件所对应的委托是{1}，要添加的委托类型为{2}", eventReg, eventCenterDic[eventReg].GetType (), eventCallback.GetType ()));
-			}
-		} else {
-			throw new Exception (string.Format ("添加监听错误：事件{0}没有对应的委托", eventReg));
+		if (eventCenterDic[eventReg] != null && eventCenterDic[eventReg].GetType () != eventCallback.GetType ()) {
+			throw new Exception (string.Format ("尝试为事件{0}添加不同类型的委托，当前事件所对应的委托是{1}，要添加的委托类型为{2}", eventReg, eventCenterDic[eventReg].GetType (), eventCallback.GetType ()));
 		}
 		eventCenterDic[eventReg] = (EventCallback) eventCenterDic[eventReg] + eventCallback;
 	}
@@ -45,12 +41,8 @@ public class EventCenter {
 		if (!eventCenterDic.ContainsKey (eventReg)) {
 			eventCenterDic.Add (eventReg, null);
 		}
-		if (eventCenterDic[eventReg] != null) {
-			if (eventCenterDic[eventReg].GetType () != eventCallback.GetType ()) {
-				throw new Exception (string.Format ("尝试为事件{0}添加不同类型的委托，当前事件所对应的委托是{1}，要添加的委托类型为{2}", eventReg, eventCenterDic[eventReg].GetType (), eventCallback.GetType ()));
-			}
-		} else {
-			throw new Exception (string.Format ("添加监听错误：事件{0}没有对应的委托", eventReg));
+		if (eventCenterDic[eventReg] != null && eventCenterDic[eventReg].GetType () != eventCallback.GetType ()) {
+			throw new Exception (string.Format ("尝试为事件{0}添加不同类型的委托，当前事件所对应的委托是{1}，要添加的委托类型为{2}", eventReg, eventCenterDic[eventReg].GetType (), eventCallback.GetType ()));
 		}
 		eventCenterDic[eventReg] = (EventCallback<T>) eventCenterDic[eventReg] + eventCallback;
 	}
@@ -98,8 +90,8 @@ public class EventCenter {
 			}
 		} else {
 			throw new Exception (string.Format ("广播错误：事件{0}没有对应的委托", eventReg));
-			}
 		}
+	}
 	/// <summary>
 	/// 广播带一个参数的监听
 	/// </summary>
@@ -113,6 +105,6 @@ public class EventCenter {
 			}
 		} else {
 			throw new Exception (string.Format ("广播错误：事件{0}没有对应的委托", eventReg));
-			}
 		}
 	}
+}
