@@ -15,7 +15,7 @@ public class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T> {
 	/// 可在Unity3D生命周期任何一处方法中调用，包括Awake方法。
 	/// </summary>
 	/// <value></value>
-	public static T MonoInstance {
+	public static T Instance {
 		get {
 			if (instance == null) {
 				instance = FindObjectOfType<T> ();
