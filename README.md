@@ -4,7 +4,7 @@
  * @Author: Luther
  * @Date: 2019-12-13 12:32:13
  * @LastEditors: Luther
- * @LastEditTime: 2019-12-15 17:03:01
+ * @LastEditTime: 2019-12-15 18:48:45
  -->
 # CSharpFrameworksForU3D
 <div align="center"><font face="黑体" size=5>Unity3D常用C#框架（导入即可使用）</font></div>
@@ -36,7 +36,7 @@
 
 ### 六、转场留物
 #### &emsp;[1.DontDestroyOnSceneChange](./06_转场留物/DontDestroyOnSceneChange/DontDestroyOnSceneChange.cs)
-###### `*注：略。`
+###### `*注：想保留哪个物体（及其子物体），就把脚本拖拽到那个物体上。`
 
 ---
 - [返回顶部](#csharpframeworksforu3d)
