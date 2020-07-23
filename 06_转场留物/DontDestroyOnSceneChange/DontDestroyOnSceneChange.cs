@@ -1,4 +1,3 @@
-﻿using System.Runtime.CompilerServices;
 /**********************************************************************
  *	Copyright (C) 2019-2020
  * 	File Name:	DontDestroyOnSceneChange.cs
