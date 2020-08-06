@@ -41,5 +41,9 @@
 ### 七、精灵帧动画
 #### &emsp;[1.SpriteInvokeRepeating](./07_精灵帧动画/SpriteInvokeRepeating.cs)
 ###### `*注：实现gif动画。`
+
+### 八、动态人物烘焙成静态
+#### &emsp;[1.BakePerson](./08_动态人物烘焙静态/BakePerson.cs)
+###### `*注：效果图展示。`![烘焙动态人物效果展示](https://github.com/LutherShaw8888/CSharpFrameworksForU3D/blob/master/08_%E5%8A%A8%E6%80%81%E4%BA%BA%E7%89%A9%E7%83%98%E7%84%99%E9%9D%99%E6%80%81/%E7%83%98%E7%84%99%E5%8A%A8%E6%80%81%E4%BA%BA%E7%89%A9%E7%A4%BA%E4%BE%8B%E5%9B%BE.JPG)
 ---
 - [返回顶部](#csharpframeworksforu3d)
